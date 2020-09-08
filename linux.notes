@@ -1,0 +1,29 @@
+
+Linux manual:
+
+1. 配置静态IP（centos7）:
+
+	>. 修改IP：/etc/sysconfig/network-scripts/ifcfg-ens33
+		BOOTPROTO=static
+		IPADDR=192.168.1.100
+		NETMASK=255.255.255.0
+		GATEWAY=192.168.1.1
+		DNS1=114.114.114.114
+		DNS2=8.8.8.8
+
+	>. 修改网关配置文件：/etc/sysconfig/network
+		NETWORKING=yes
+		GATEWAY=192.168.1.1
+
+	>. 修改 /etc/NetworkManager/NetworkManager.conf 文件，在main部分添加 “dns=none” 选项
+		[main]
+		plugins=ifcfg-rh
+		dns=none
+
+	>. 配置DNS解析文件：/etc/resolv.conf
+		nameserver 114.114.114.144
+		nameserver 8.8.8.8
+
+	>. 重启网络服务：service network restart
+
+	
