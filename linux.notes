@@ -27,3 +27,12 @@ Linux manual:
 	>. 重启网络服务：service network restart
 
 	
+2. 关闭Linux图形界面：
+	>. systemctl set-default multi-user.target  	# 关闭图形界面
+		
+	>. systemctl set-default graphical.target   	# 打开图形界面
+
+	>. systemctl get-default			# 查看当前默认目标
+
+
+

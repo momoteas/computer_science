@@ -1,0 +1,7 @@
+
+Linux C Notes
+
+1. 宏定义：
+	S_ISDIR宏定义：sys/stat.h
+        #define S_ISDIR (mode) (((mode) & S_IFMT) == S_IFDIR)
+
