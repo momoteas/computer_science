@@ -1,0 +1,19 @@
+
+git manual:
+
+1. clone 远程仓库到本地计算仓库：
+	git clone https://github.com/momoteas/computer_science/blob/master/git.notes
+
+2. 将文件提交至暂存区：
+	git add filename
+
+3. 将暂存区文件确认到工作区：
+	git commit -m 'comments'
+
+4. 将工作区中文件同步到远程仓库（github.com）:
+	git push origin master
+
+5. 输入username和passwd
+
+6. done	
+
