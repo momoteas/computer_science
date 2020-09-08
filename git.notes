@@ -7,13 +7,16 @@ git manual:
 2. 将文件提交至暂存区：
 	git add filename
 
-3. 将暂存区文件确认到工作区：
+3. 查看暂存区状态：
+	git status
+
+4. 将暂存区文件确认到工作区：
 	git commit -m 'comments'
 
-4. 将工作区中文件同步到远程仓库（github.com）:
+5. 将工作区中文件同步到远程仓库（github.com）:
 	git push origin master
 
-5. 输入username和passwd
+6. 输入username和passwd
 
-6. done	
+7777777. done	
 
