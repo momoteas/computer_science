@@ -35,4 +35,58 @@ Linux manual:
 	>. systemctl get-default			# 查看当前默认目标
 
 
+3. 升级vim:
+	>. download vim:
+		git clone https://github.com/vim/vim (or vim 官网)
 
+	>. 解压，并进入src/:
+		./configure
+		make
+		make install
+		(error ncurses: yum search ncurses --> install ncurses-devel.x86_64)
+	
+	>. vim关联：
+		alias vim='/usr/local/bin/vim'
+		echo "alias vim='/usr/local/bin/vim' " >> ~/.bashrc
+
+	>. 验证是否成功：
+		vim -version
+
+4. vim 插件：
+	>. vim-plug:
+		download vim-plug: git clone https://github.com/junegunn/vim-plug.git
+		
+		usage:
+			mkdir ~/.vim/plugged
+		
+			配置.vimrc文件：
+				call plug#begin('~/.vim/plugged')
+				Plug ' '
+				call plug#end()
+	
+	>. youcompleteme: (https://www.cnblogs.com/nidey/p/8657016.html)
+		下载安装必要的组件：
+			yum install -y gcc gcc-c++ ruby ruby-devel lua lua-devel  \
+    				ctags git python python-devel \
+    				tcl-devel ncurses-devel \
+			        perl perl-devel perl-ExtUtils-ParseXS \
+   			        perl-ExtUtils-CBuilder \
+    				perl-ExtUtils-Embed
+
+		安装vim8:
+
+		 
+		安装youcompleteme:
+		
+		
+		下载CMake:
+			https://cmake.org/download/
+			tar zxvf cmake-3.10.3.tar.gz
+			cd cmake-3.10.3
+			./bootstrap && make && make install
+
+		
+		编译YouCompleteMe(支持C/C++):
+			cd ~/.vim/bundle/YouCompleteMe/
+			./install.py --clang-completer
+		
