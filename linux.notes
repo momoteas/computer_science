@@ -90,3 +90,8 @@ Linux manual:
 			cd ~/.vim/bundle/YouCompleteMe/
 			./install.py --clang-completer
 		
+
+5. 利用SecureCRT传输window文件至linux:
+	>. alt + P，进入sftp
+	>. put e:\...\...
+	>. 文件传输至家目录
