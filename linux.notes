@@ -95,3 +95,13 @@ Linux manual:
 	>. alt + P，进入sftp
 	>. put e:\...\...
 	>. 文件传输至家目录
+	>. pull origin master (download files from github.com)
+
+6. export 环境变量修改：
+	>. example:
+		export PATH=&PATH:/opt/bin/
+		此操作只在本次登录中有效；
+
+	>. 可修改如下文件使其长久有效：
+		修改home路径下的~/.bashrc 或 ~/.bash—_profile文件：
+		export PATH=$PATH:/opt/bin
